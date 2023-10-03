@@ -33,7 +33,7 @@ const ContactUs = () => {
         <StyleHide>
           <StyleSocial variants={titleAnimation}>
             <StyleCircle />
-            <h2>Socail Media</h2>
+            <h2>Social Media</h2>
           </StyleSocial>
         </StyleHide>
       </div>
