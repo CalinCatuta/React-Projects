@@ -2,6 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // components
+import Nav from "./components/Nav";
 import Explore from "./pages/Explore";
 import Offers from "./pages/Offers";
 import Profile from "./pages/Profile";
@@ -21,6 +22,7 @@ function App() {
           <Route path="/sing-up" element={<SignUp />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
         </Routes>
+        <Nav />
       </Router>
     </>
   );
