@@ -81,7 +81,7 @@ function SignIn() {
           <Link to="/forgot-password" className="forgotPasswordLink">
             Forgot Password
           </Link>
-          <div className="signInBar">
+          <div className="signInBar signInMargin">
             <p className="signInText">Sign In</p>
             <button className="signInButton">
               <ArrowRightIcon fill="#fff" width="34px" height="34px" />
@@ -89,7 +89,7 @@ function SignIn() {
           </div>
         </form>
         <OAuth />
-        <Link to="/sign-up" className="registerLink">
+        <Link to="/sign-up" className="registerLink ">
           Sign Up Instead
         </Link>
       </div>
