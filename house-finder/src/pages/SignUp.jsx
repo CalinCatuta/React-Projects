@@ -117,7 +117,7 @@ function SignUp() {
           </div>
         </form>
         <OAuth />
-        <Link to="/sign-in" className="registerLink">
+        <Link to="/sign-in" className="registerLink mobileSignIn">
           Sign In Instead
         </Link>
       </div>

@@ -298,7 +298,11 @@ button {
   text-align: center;
   margin-bottom: 1.5rem;
 }
-
+@media (max-width: 600px) {
+  .mobileSignIn {
+    margin-top: 0.5rem;
+  }
+}
 @media (min-width: 1217px) {
   .explore {
     margin-bottom: 10rem;
