@@ -1,26 +1,48 @@
 import { useState } from "react";
+
 import { Link, useNavigate } from "react-router-dom";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+
 import { ReactComponent as ArrowRightIcon } from "../assets/svg/keyboardArrowRightIcon.svg";
 import visibilityIcon from "../assets/svg/visibilityIcon.svg";
 
-const SignIn = () => {
-  // state
+function SignIn() {
   const [showPass, setShowPass] = useState(false);
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
-
   const { email, password } = formData;
 
-  const navigate = useNavigate;
-  // function
+  const navigate = useNavigate();
+
   const onChangeHan = (e) => {
     setFormData((prevState) => ({
       ...prevState,
       [e.target.id]: e.target.value,
     }));
   };
+
+  const onSubmitHan = async (e) => {
+    e.preventDefault();
+
+    try {
+      const auth = getAuth();
+
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+
+      if (userCredential.user) {
+        navigate("/");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <>
       <div className="pageContainer">
@@ -28,7 +50,7 @@ const SignIn = () => {
           <p className="pageHeader">Welcome Back</p>
         </header>
 
-        <form>
+        <form onSubmit={onSubmitHan}>
           <input
             type="email"
             placeholder="Email"
@@ -70,6 +92,6 @@ const SignIn = () => {
       </div>
     </>
   );
-};
+}
 
 export default SignIn;
