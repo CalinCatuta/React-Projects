@@ -78,7 +78,7 @@ const Profile = () => {
               type="text"
               id="email"
               className="profileEmail"
-              disabled={!changeDetails}
+              disabled={true}
               value={email}
               onChange={onChangeHan}
             />
