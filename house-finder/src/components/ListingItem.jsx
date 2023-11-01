@@ -10,7 +10,7 @@ const ListingItem = ({ listing, id }) => {
         className="categoryListingLink"
       >
         <img
-          src={listing.imgUrls[0]}
+          src={listing.imageUrls[0]}
           alt={listing.name}
           className="categoryListingImg"
         />
