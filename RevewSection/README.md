@@ -1,3 +1,10 @@
+# About this Project
+ This Porject is a website where you can give feedback (Comment with a Note).
+ The feedback have a backend server with Json and I used Concurrently to have the website and server rune with one command.
+
+ # "server": "json-server --watch db.json --port 5000",
+ # "dev": "concurrently \"npm run server\" \"npm start\""
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
