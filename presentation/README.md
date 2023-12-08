@@ -1,3 +1,7 @@
+# About this project
+This project is a Presentation type website where I used Animation with "framer-motion",
+this website is more about visual and animation.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
