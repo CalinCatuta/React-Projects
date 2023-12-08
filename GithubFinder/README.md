@@ -1,3 +1,6 @@
+# About this Porject
+This website is a Github account finder with the free API from GitHub.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
