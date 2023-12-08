@@ -1,3 +1,9 @@
+# About this Project
+
+This project is a website where you can find estate for sale or rent. 
+The website have User functionability where you can create a account or login with Google the functionability was made with Firebase.
+After Login you can create a estate for sale or rent.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
